@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity" >
+
+
+    <fragment
+        android:name="edu.rasm.pickel.mcp.GetDirections"
+        android:id="@+id/left_fragment"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1" />
+    <fragment
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="2" />
+
+
+
+</LinearLayout>
+

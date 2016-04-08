@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">MCP</string>
+
+    <!-- Main activity -->
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="paired_devices">Select a paired device to connect</string>
+    <string name="connected_device">You are currently connected to&#58;</string>
+    <string name="next">Next</string>
+    <string name="continue_paired">Continue</string>
+    <string name="continue_unpaired">Continue\nUnpaired</string>
+    <string name="unpair">Unpair\nDevice</string>
+    <string name="start_discovery">Start\nDiscovery</string>
+
+    <!-- Interface activity -->
+    <string name="title_activity_controls">Interface</string>
+    <string name="pin">Pin</string>
+    <string name="function">Function</string>
+    <string name="read_sd">Read SD\nlogger</string>
+    <string name="save_sd">Enable SD\nlogger</string>
+    <string name="led_toggle">LED\nOn/Off</string>
+    <string name="binary">Binary</string>
+    <string name="read_data">Enable\nData In</string>
+    <string name="send_data">Send data</string>
+    <string name="voice_rec">Voice Recognition</string>
+    <string name="speech_not_supported">This device does not support Voice Recognition</string>
+    <string name="clear">Clear</string>
+    <string name="back">Back</string>
+
+    <!-- GPS activity -->
+    <string name="title_activity_gps">GPS/Map Activity</string>
+    <string name="get_gps">Get connected device coordinates</string>
+    <string name="get_android_gps">Get coordinates for this device</string>
+    <string name="source">Source</string>
+    <string name="destination">Destination</string>
+    <string name="directions">Get Directions</string>
+
+
+</resources>

@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvPD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/paired_devices"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPD" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDeviceLabel"
+        android:layout_below="@+id/listView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDeviceSelected"
+        android:layout_below="@+id/tvDeviceLabel"
+        android:layout_centerHorizontal="true" />
+
+    <!--LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/button_row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvDeviceSelected"
+        android:layout_centerHorizontal="true"-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_paired"
+            android:id="@+id/button"
+            android:layout_below="@+id/tvDeviceSelected"
+            android:enabled="false"
+            android:onClick="onNextActivityClick"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_unpaired"
+            android:id="@+id/button1"
+            android:layout_below="@+id/button"
+            android:onClick="onNextActivityClick"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unpair"
+            android:id="@+id/button2"
+            android:layout_below="@+id/button1"
+            android:onClick="onUnpairClick"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1" />
+    <!--/LinearLayout-->
+
+    <!--LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/button_row"
+        android:layout_centerHorizontal="true"-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_discovery"
+            android:id="@+id/button3"
+            android:layout_below="@+id/button2"
+            android:gravity="center_horizontal"
+            android:onClick="onStartDiscoveryClick"
+            android:layout_centerHorizontal="true" />
+    <!--/LinearLayout-->
+
+</RelativeLayout>
+
